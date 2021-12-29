@@ -59,4 +59,4 @@ if btn_get_clusters:
         if t_status == 'processing':
             st.write('Request in process, please try again in few moments')
         else:
-            st.write('File URL: ' + response.json()['status_list'][0]['result_file_url'] )
+            st.write('File URL: ' + response.json()['status_list'][0]['result_file_url'].replace('.json', '.csv') )
