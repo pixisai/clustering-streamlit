@@ -5,8 +5,8 @@ import requests
 
 st.title('Google Search Keywords Clustering')
 
-st.header('Upload Keywords as CSV')
-uploaded_csv = st.file_uploader('Upload Keywords CSV file', type='csv', help='Required cols: Keyword, Avg. monthly search volume')
+st.header('Step 1: Upload Keywords as CSV')
+uploaded_csv = st.file_uploader('Upload Keywords CSV file', type='csv', help='Required cols: Keyword, Avg. monthly searches')
 
 btn_send_csv = st.button('Upload CSV for clustering')
 
@@ -38,7 +38,7 @@ if btn_send_csv:
         st.write('Upload CSV to begin.')
 
 
-st.header('Get cluster result for given Request Id')
+st.header('Step 2: Get cluster result for given Request Id')
 
 in_requestid = st.text_input('Request Id')
 btn_get_clusters = st.button('Get clusters for requestid')
