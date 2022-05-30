@@ -1,2 +1,2 @@
 def echo_this(text):
-    print(text)
+    return text
